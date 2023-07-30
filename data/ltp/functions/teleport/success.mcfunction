@@ -6,3 +6,21 @@ data modify storage ltp:ltp tmp.json set value '["",{"nbt":"tmp.data.LodestonePo
 # Show message
 execute if data entity @s SelectedItem.tag.display.Name run tellraw @s [{"text":"","hoverEvent":{"action":"show_text","contents":[{"nbt":"tmp.json","storage":"ltp:ltp","color":"gray","interpret":true}]}},{"text":"LodestoneTP > ","color":"dark_aqua"},{"text":"Teleported to ","color":"gray"},{"nbt":"tmp.data.display.Name","storage":"ltp:ltp","color":"gray","interpret":true}]
 execute unless data entity @s SelectedItem.tag.display.Name run tellraw @s [{"text":"","hoverEvent":{"action":"show_text","contents":[{"nbt":"tmp.json","storage":"ltp:ltp","color":"gray","interpret":true}]}},{"text":"LodestoneTP > ","color":"dark_aqua"},{"text":"Teleported to Lodestone","color":"gray"}]
+
+
+# Sound effect at destination
+execute at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.9
+
+
+# Hide progress bar
+execute if score ProgressBar ltp.options matches 1 if score SneakTime ltp.options matches 20.. run function ltp:teleport/progress_full
+
+
+# Break any blocks at destination + make player unkillable for a few seconds
+# Players would take damage when teleporting across dimensions for some reason (maybe server lag?)
+execute if score BreakBlocks ltp.options matches 1 at @s unless block ~ ~ ~ #ltp:keep run setblock ~ ~ ~ minecraft:air destroy
+execute if score GiveResistance ltp.options matches 1 run effect give @s minecraft:resistance 10 255 false
+
+
+# Break compass
+execute if score BreakCompass ltp.options matches 1 run function ltp:teleport/break_compass

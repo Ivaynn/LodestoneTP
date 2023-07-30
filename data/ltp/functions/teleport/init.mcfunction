@@ -27,7 +27,7 @@ execute if score $tp_success ltp.tmp matches 0 if score $cancel ltp.tmp matches 
 
 # Show success or cancel message
 execute if score $tp_success ltp.tmp matches 0 run function ltp:teleport/cancel
-execute if score $tp_success ltp.tmp matches 1 run function ltp:teleport/success_msg
+execute if score $tp_success ltp.tmp matches 1 run function ltp:teleport/success
 
 
 # Clear tmp

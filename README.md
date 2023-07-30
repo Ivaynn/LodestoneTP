@@ -71,6 +71,7 @@ Here's a list with all the options available:
 | BreakBlocks | 0/1 | 1 | Toggle it blocks placed on top of the lodestone should break |
 | CrossDimensions | 0/1 | 1 | Toggle if players can teleport to different dimensions |
 | ProgressBar | 0/1 | 1 | Toggle a progress bar while sneaking |
+| BreakCompass | 0/1 | 0 | Toggle if a compass breaks when used to teleport |
 
 Default values were chosen with game balance in mind, but they're up to personal preference, so don't be afraid to change them to your liking!
 

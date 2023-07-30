@@ -35,20 +35,6 @@ execute if score $tp_z ltp.tmp matches ..-1 at @s run function ltp:teleport/tp/z
 execute if score $tp_z ltp.tmp matches 1.. at @s run function ltp:teleport/tp/z_pos
 
 
-# Sound effect at destination
-execute at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.9
-
-
-# Hide progress bar
-execute if score ProgressBar ltp.options matches 1 if score SneakTime ltp.options matches 20.. run function ltp:teleport/progress_full
-
-
-# Break any blocks at destination + make player unkillable for a few seconds
-# Players would take damage when teleporting across dimensions for some reason (maybe server lag?)
-execute if score BreakBlocks ltp.options matches 1 at @s unless block ~ ~ ~ #ltp:keep run setblock ~ ~ ~ minecraft:air destroy
-execute if score GiveResistance ltp.options matches 1 run effect give @s minecraft:resistance 10 255 false
-
-
 # Clear tmp
 scoreboard players reset $tp_x ltp.tmp
 scoreboard players reset $tp_y ltp.tmp
