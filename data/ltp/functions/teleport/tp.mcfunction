@@ -3,11 +3,15 @@
 scoreboard players set @s ltp.timer -1000000
 
 
+# Schedule confirmation for the next tick. Keep trying until the destination is reached.
+tag @s add ltp.confirm
+schedule function ltp:teleport/confirm/scheduled 1t
+
+
 scoreboard players operation @s ltp.cooldown = Cooldown ltp.options
 
 playsound minecraft:item.chorus_fruit.teleport player @a ~ ~0.7 ~ 1 0.6
 particle minecraft:explosion ~ ~0.7 ~ 0 0 0 1 0 normal @a
-
 
 
 # Get coordinates
@@ -37,10 +41,6 @@ execute at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~
 
 # Hide progress bar
 execute if score ProgressBar ltp.options matches 1 if score SneakTime ltp.options matches 20.. run function ltp:teleport/progress_full
-
-
-# Chat message
-function ltp:teleport/success_msg
 
 
 # Break any blocks at destination + make player unkillable for a few seconds

@@ -1,5 +1,5 @@
 
-tellraw @s [{"text":"","hoverEvent":{"action":"show_text","contents":[{"text":"Data pack by Ivaynn","color":"gray"}]}},"\n",{"text":" ◆ ","color":"aqua","bold":true},{"text":" LodestoneTP ","color":"dark_aqua"},{"text":" ◆ ","color":"aqua","bold":true},"\n"]
+tellraw @s [{"text":"","hoverEvent":{"action":"show_text","contents":[{"text":"Data pack made by Ivaynn","color":"gray"}]}},"\n",{"text":" ◆ ","color":"aqua","bold":true},{"text":" LodestoneTP ","color":"dark_aqua"},{"text":" ◆ ","color":"aqua","bold":true},"\n"]
 
 execute if predicate ltp:holding_tracked run function ltp:as_player/trigger/selected_info
 execute if score Cooldown ltp.options matches 1.. if score @s ltp.cooldown matches 1.. run function ltp:as_player/trigger/cooldown

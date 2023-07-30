@@ -15,3 +15,5 @@ scoreboard objectives remove ltp.options
 
 data remove storage ltp:ltp tmp
 data remove storage ltp:ltp dimension
+
+tag @a remove ltp.confirm

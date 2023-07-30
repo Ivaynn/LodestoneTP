@@ -6,6 +6,9 @@ data modify storage ltp:ltp tmp.data set from entity @s SelectedItem.tag
 # Check if compass is valid
 scoreboard players set $cancel ltp.tmp 0
 execute unless data storage ltp:ltp tmp.data.LodestonePos.X run scoreboard players set $cancel ltp.tmp 2
+
+
+# Check if player is on cooldown
 execute if score Cooldown ltp.options matches 1.. if score $cancel ltp.tmp matches 0 if score @s ltp.cooldown matches 1.. run scoreboard players set $cancel ltp.tmp 3
 
 
@@ -22,8 +25,9 @@ execute if score $cancel ltp.tmp matches 0 if score $different_dim ltp.tmp match
 execute if score $tp_success ltp.tmp matches 0 if score $cancel ltp.tmp matches 0 run scoreboard players set $cancel ltp.tmp 8
 
 
-# If something went wrong, cancel
-execute if score $cancel ltp.tmp matches 1.. run function ltp:teleport/cancel
+# Show success or cancel message
+execute if score $tp_success ltp.tmp matches 0 run function ltp:teleport/cancel
+execute if score $tp_success ltp.tmp matches 1 run function ltp:teleport/success_msg
 
 
 # Clear tmp

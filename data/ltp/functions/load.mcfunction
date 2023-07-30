@@ -1,4 +1,3 @@
-tellraw @a ["",{"text":"> Reloaded!"}]
 schedule function ltp:main 1t replace
 
 scoreboard objectives add LodestoneTP trigger
