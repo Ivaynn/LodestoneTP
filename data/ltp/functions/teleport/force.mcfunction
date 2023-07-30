@@ -23,9 +23,10 @@ execute store result score $self_z ltp.tmp run data get entity @s Pos[2]
 
 
 # Cancel if player is already at target pos
-scoreboard players set $cancel ltp.tmp 0
-execute if score $different_dim ltp.tmp matches 0 if score $target_x ltp.tmp = $self_x ltp.tmp if score $target_y ltp.tmp = $self_y ltp.tmp if score $target_z ltp.tmp = $self_z ltp.tmp run scoreboard players set $cancel ltp.tmp 1
-execute if score $cancel ltp.tmp matches 0 run function ltp:dimension
+scoreboard players set $at_destination ltp.tmp 0
+execute if score $different_dim ltp.tmp matches 0 if score $target_x ltp.tmp = $self_x ltp.tmp if score $target_y ltp.tmp = $self_y ltp.tmp if score $target_z ltp.tmp = $self_z ltp.tmp run scoreboard players set $at_destination ltp.tmp 1
+execute if score $at_destination ltp.tmp matches 0 run function ltp:dimension
+execute if score $at_destination ltp.tmp matches 1 run function ltp:teleport/success
 
 
 # Clear tmp
@@ -36,6 +37,6 @@ scoreboard players reset $target_z ltp.tmp
 scoreboard players reset $self_x ltp.tmp
 scoreboard players reset $self_y ltp.tmp
 scoreboard players reset $self_z ltp.tmp
-scoreboard players reset $cancel ltp.tmp
+scoreboard players reset $at_destination ltp.tmp
 data remove storage ltp:ltp tmp
 data remove storage ltp:ltp dimension

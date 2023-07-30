@@ -25,9 +25,13 @@ execute if score $cancel ltp.tmp matches 0 if score $different_dim ltp.tmp match
 execute if score $tp_success ltp.tmp matches 0 if score $cancel ltp.tmp matches 0 run scoreboard players set $cancel ltp.tmp 8
 
 
-# Show success or cancel message
-execute if score $tp_success ltp.tmp matches 0 run function ltp:teleport/cancel
-execute if score $tp_success ltp.tmp matches 1 run function ltp:teleport/success
+# Play animation here (starting position) for the player teleporting away
+execute if score $tp_success ltp.tmp matches 1 run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~0.7 ~ 1 0.6
+execute if score $tp_success ltp.tmp matches 1 run particle minecraft:explosion ~ ~0.7 ~ 0 0 0 1 0 normal @a
+
+
+# If something went wrong, cancel
+execute if score $cancel ltp.tmp matches 1.. run function ltp:teleport/cancel
 
 
 # Clear tmp
