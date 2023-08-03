@@ -4,6 +4,7 @@
 
         "minecraft:bedrock",
         "minecraft:water",
+        "minecraft:lava",
         "minecraft:moving_piston",
         "minecraft:nether_portal",
         "minecraft:end_portal",

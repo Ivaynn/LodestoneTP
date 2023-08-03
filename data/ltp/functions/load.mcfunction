@@ -18,7 +18,7 @@ scoreboard players set #60 ltp.math 60
 
 scoreboard objectives add ltp.options dummy
 execute unless score Enabled ltp.options matches 0..1 run scoreboard players set Enabled ltp.options 1
-execute unless score OnLodestone ltp.options matches 0..1 run scoreboard players set OnLodestone ltp.options 0
+execute unless score OnLodestone ltp.options matches 0..1 run scoreboard players set OnLodestone ltp.options 1
 execute unless score Cooldown ltp.options matches 0.. run scoreboard players set Cooldown ltp.options 1200
 execute unless score MovingCancel ltp.options matches 0..1 run scoreboard players set MovingCancel ltp.options 0
 execute unless score DamageCancel ltp.options matches 0..1 run scoreboard players set DamageCancel ltp.options 1

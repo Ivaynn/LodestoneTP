@@ -6,6 +6,7 @@ LodestoneTP is a Minecraft data pack that introduces a convenient and "vanilla-f
   <img src="https://github.com/Ivaynn/LodestoneTP/assets/130713483/3c5a32d4-5621-4873-8235-40acfa29d1cd" width="60%" title="LodestoneTP">
 </p>
 
+Links: [Discord](https://discord.gg/QAtc7ZgPxS) | [PlanetMinecraft](https://www.planetminecraft.com/data-pack/lodestonetp/)
 
 <br/>
 
@@ -62,7 +63,7 @@ Here's a list with all the options available:
 | Option | Value | Default | Description |
 | -- | -- | -- | -- |
 | Enabled | 0/1 | 1 | Enable or disable teleporting |
-| OnLodestone | 0/1 | 0 | Toggle if players must stand on a lodestone block to teleport |
+| OnLodestone | 0/1 | 1 | Toggle if players must stand on a lodestone block to teleport |
 | Cooldown | ≥ 0 | 1200 | Teleport cooldown, in ticks (20 ticks = 1 second) |
 | SneakTime | ≥ 0 | 100 | Sneak time to teleport, in ticks |
 | MovingCancel | 0/1 | 0 | Toggle if moving should cancel the teleport |
