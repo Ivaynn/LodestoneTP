@@ -6,8 +6,10 @@ LodestoneTP is a Minecraft data pack that introduces a convenient and "vanilla-f
   <img src="https://github.com/Ivaynn/LodestoneTP/assets/130713483/eafe6c4f-4107-43ec-b7a1-071489595b50" width="60%" title="LodestoneTP">
 </p>
 
-<br/>
 
+### Links: [Discord](https://discord.gg/QAtc7ZgPxS) | [PlanetMinecraft](https://www.planetminecraft.com/data-pack/lodestonetp/)
+
+<br/>
 
 ## Installation
 
@@ -67,7 +69,7 @@ Here's a list with all the options available:
 | MovingCancel | 0/1 | 0 | Toggle if moving should cancel the teleport |
 | DamageCancel | 0/1 | 1 | Toggle if taking damage should cancel the teleport |
 | GiveResistance | 0/1 | 1 | Toggle if players are resistant to damage for a few seconds after teleporting |
-| BreakBlocks | 0/1 | 1 | Toggle it blocks placed on top of the lodestone should break |
+| BreakBlocks | 0/1 | 1 | Toggle if blocks placed on top of the lodestone should break |
 | CrossDimensions | 0/1 | 1 | Toggle if players can teleport to different dimensions |
 | ProgressBar | 0/1 | 1 | Toggle a progress bar while sneaking |
 | BreakCompass | 0/1 | 0 | Toggle if a compass breaks when used to teleport |
