@@ -3,10 +3,8 @@
 LodestoneTP is a Minecraft data pack that introduces a convenient and "vanilla-friendly" teleportation using compasses and tracked lodestone blocks. It includes many options to personalize your experience and help you balance this feature to your liking.
 
 <p align="center">
-  <img src="https://github.com/Ivaynn/LodestoneTP/assets/130713483/3c5a32d4-5621-4873-8235-40acfa29d1cd" width="60%" title="LodestoneTP">
+  <img src="https://github.com/Ivaynn/LodestoneTP/assets/130713483/eafe6c4f-4107-43ec-b7a1-071489595b50" width="60%" title="LodestoneTP">
 </p>
-
-Links: [Discord](https://discord.gg/QAtc7ZgPxS) | [PlanetMinecraft](https://www.planetminecraft.com/data-pack/lodestonetp/)
 
 <br/>
 
