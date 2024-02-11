@@ -1,7 +1,7 @@
+execute if score ProgressBar ltp.options matches 1 if score @s ltp.timer matches 20.. run function ltp:teleport/progress_cancel
 
 # Reset timer
 scoreboard players set @s ltp.timer -1000000
-
 
 execute if score $cancel ltp.tmp matches 2.. run playsound minecraft:entity.item.break player @a ~ ~ ~ 1 1.2
 execute if score $cancel ltp.tmp matches 2.. run particle minecraft:smoke ~ ~0.7 ~ 0.3 0.4 0.3 0.02 20 normal @a

@@ -20,7 +20,7 @@ execute if score CrossDimensions ltp.options matches 0 if score $cancel ltp.tmp 
 
 # Teleport
 scoreboard players set $tp_success ltp.tmp 0
-execute if score $cancel ltp.tmp matches 0 if score $different_dim ltp.tmp matches 1 if score CrossDimensions ltp.options matches 1 run function ltp:dimension
+execute if score $cancel ltp.tmp matches 0 if score $different_dim ltp.tmp matches 1 if score CrossDimensions ltp.options matches 1 run function ltp:teleport/tp
 execute if score $cancel ltp.tmp matches 0 if score $different_dim ltp.tmp matches 0 run function ltp:teleport/tp
 execute if score $tp_success ltp.tmp matches 0 if score $cancel ltp.tmp matches 0 run scoreboard players set $cancel ltp.tmp 8
 

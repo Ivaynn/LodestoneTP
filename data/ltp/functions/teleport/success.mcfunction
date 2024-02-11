@@ -12,13 +12,8 @@ execute unless data entity @s SelectedItem.tag.display.Name run tellraw @s [{"te
 execute at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.9
 
 
-# Hide progress bar
+# Optional features when a teleport succeeds
+execute if score GiveResistance ltp.options matches 1 run effect give @s minecraft:resistance 10 255 false
 execute if score ProgressBar ltp.options matches 1 if score SneakTime ltp.options matches 20.. run function ltp:teleport/progress_full
-
-
-# Break any blocks at destination
 execute if score BreakBlocks ltp.options matches 1 at @s unless block ~ ~ ~ #ltp:keep run setblock ~ ~ ~ minecraft:air destroy
-
-
-# Break compass
 execute if score BreakCompass ltp.options matches 1 run function ltp:teleport/break_compass

@@ -13,7 +13,7 @@ LodestoneTP is a Minecraft data pack that introduces a convenient and "vanilla-f
 
 ## Installation
 
-1. Download the data pack from the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
+1. Download the data pack from the [releases page](https://github.com/Ivaynn/LodestoneTP/releases) or Planet Minecraft
 2. Find the "datapacks" folder of your world:
     - Singleplayer (new world): Create New World > More > Data Packs > Open Pack Folder
     - Singleplayer (existing world): Select World > Edit > Open World Folder > "datapacks"
@@ -52,7 +52,7 @@ To change an option, click it and type your value.
 
 
 
-Example: this command changes the teleport cooldown to 5 seconds (5*20=100 ticks):
+Example: this command changes the teleport cooldown to 5 seconds (5×20=100 ticks):
 ```
 /scoreboard players set Cooldown ltp.options 100
 ```
@@ -82,8 +82,8 @@ Default values were chosen with game balance in mind, but they're up to personal
 <br/>
 
 ## Other information
-- Made for Minecraft Java Edition 1.20+
-- If you're using non-vanilla dimensions, add them to `data\ltp\functions\dimension.mcfunction`
+- Made for Minecraft Java Edition 1.20.4+
+- For previous versions, check the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
 - Everything in this data pack uses the `ltp` prefix
 
 
