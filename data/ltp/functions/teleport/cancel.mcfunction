@@ -14,5 +14,6 @@ execute if score $cancel ltp.tmp matches 5 run tellraw @s ["",{"text":"Lodestone
 execute if score $cancel ltp.tmp matches 6 run tellraw @s ["",{"text":"LodestoneTP > ","color":"dark_aqua"},{"text":"You can't move while teleporting!","color":"gray"}]
 execute if score $cancel ltp.tmp matches 7 run tellraw @s ["",{"text":"LodestoneTP > ","color":"dark_aqua"},{"text":"Teleporting to other dimensions is disabled!","color":"gray"}]
 execute if score $cancel ltp.tmp matches 8 run tellraw @s ["",{"text":"LodestoneTP > ","color":"dark_aqua"},{"text":"Unknown dimension!","color":"gray"}]
+execute if score $cancel ltp.tmp matches 9 run tellraw @s ["",{"text":"LodestoneTP > ","color":"dark_aqua"},{"text":"Invalid last death location!","color":"gray"}]
 
 scoreboard players reset $cancel ltp.tmp

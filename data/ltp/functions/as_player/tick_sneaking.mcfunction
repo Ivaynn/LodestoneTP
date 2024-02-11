@@ -16,6 +16,10 @@ execute if score @s ltp.timer matches 1.. run particle minecraft:portal ~ ~0.8 ~
 execute if score @s ltp.timer matches 1.. run particle minecraft:reverse_portal ~ ~0.8 ~ 0.1 0.25 0.1 0.1 1 normal @a
 
 
+# Recovery compass location check + warning
+execute if score RecoveryCompass ltp.options matches 1 if score $cancel ltp.tmp matches 0 if score @s ltp.timer matches 1 if predicate ltp:holding_recovery run function ltp:as_player/recovery_check
+
+
 # Sound
 scoreboard players operation $is_zero ltp.tmp = @s ltp.timer
 scoreboard players operation $is_zero ltp.tmp %= #20 ltp.math

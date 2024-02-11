@@ -14,4 +14,3 @@ scoreboard objectives remove ltp.math
 scoreboard objectives remove ltp.options
 
 data remove storage ltp:ltp tmp
-data remove storage ltp:ltp dimension
