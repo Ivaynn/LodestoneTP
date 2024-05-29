@@ -6,12 +6,12 @@ execute if predicate ltp:holding_recovery run scoreboard players set $compass_ty
 
 
 # Put nbt on storage for better performance
-execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.data set from entity @s SelectedItem.tag
+execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.data set from entity @s SelectedItem.components."minecraft:lodestone_tracker"
 
 
 # Check if compass is valid
 scoreboard players set $cancel ltp.tmp 0
-execute if score $compass_type ltp.tmp matches 1 unless data storage ltp:ltp tmp.data.LodestonePos.X run scoreboard players set $cancel ltp.tmp 2
+execute if score $compass_type ltp.tmp matches 1 unless data storage ltp:ltp tmp.data.target.pos[0] run scoreboard players set $cancel ltp.tmp 2
 execute if score $compass_type ltp.tmp matches 2 unless score RecoveryCompass ltp.options matches 1 run scoreboard players set $cancel ltp.tmp 1
 execute if score $compass_type ltp.tmp matches 2 if score RecoveryCompass ltp.options matches 1 unless data entity @s LastDeathLocation run scoreboard players set $cancel ltp.tmp 9
 
@@ -21,7 +21,7 @@ execute if score Cooldown ltp.options matches 1.. if score $cancel ltp.tmp match
 
 
 # Check dimension
-execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.dimension set from storage ltp:ltp tmp.data.LodestoneDimension
+execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.dimension set from storage ltp:ltp tmp.data.target.dimension
 execute if score $compass_type ltp.tmp matches 2 run data modify storage ltp:ltp tmp.dimension set from entity @s LastDeathLocation.dimension
 
 data modify storage ltp:ltp tmp.dimension_check set from storage ltp:ltp tmp.dimension

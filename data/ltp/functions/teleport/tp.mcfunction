@@ -5,9 +5,9 @@ scoreboard players operation @s ltp.cooldown = Cooldown ltp.options
 
 
 # Macro inputs: {x, y, z, dim}
-execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.macro.x set from storage ltp:ltp tmp.data.LodestonePos.X
-execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.macro.y set from storage ltp:ltp tmp.data.LodestonePos.Y
-execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.macro.z set from storage ltp:ltp tmp.data.LodestonePos.Z
+execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.macro.x set from storage ltp:ltp tmp.data.target.pos[0]
+execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.macro.y set from storage ltp:ltp tmp.data.target.pos[1]
+execute if score $compass_type ltp.tmp matches 1 run data modify storage ltp:ltp tmp.macro.z set from storage ltp:ltp tmp.data.target.pos[2]
 
 execute if score $compass_type ltp.tmp matches 2 run data modify storage ltp:ltp tmp.macro.x set from entity @s LastDeathLocation.pos[0]
 execute if score $compass_type ltp.tmp matches 2 run data modify storage ltp:ltp tmp.macro.y set from entity @s LastDeathLocation.pos[1]
