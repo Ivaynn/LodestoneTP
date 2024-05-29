@@ -33,7 +33,7 @@ To uninstall, use `/function ltp:admin/uninstall` and remove the data pack from 
 ## Getting Started
 In Minecraft, a compass used on a lodestone block points toward it. With this data pack, you can sneak while holding that compass to teleport to the lodestone block.
 
-To see the coordinates of your tracked compass and other information relative to the data pack, you can use this command:
+To see the coordinates of your tracked compass and other information related to the data pack, you can use this command:
 ```
 /trigger LodestoneTP
 ```
@@ -44,25 +44,16 @@ To see the coordinates of your tracked compass and other information relative to
 
 ## Data Pack Options
 
-This data pack includes a few options that you can change to your liking. To view and change the options in-game, you can use this command:
+This data pack includes a few options that you can change to your liking. To view and change these options in-game, you can use this command:
 ```
 /function ltp:admin/options
 ```
-To change an option, click it and type your value.
+Click the options to change them. To set a custom value, type it at the end of its scoreboard command.
 
-
-
-Example: this command changes the teleport cooldown to 5 seconds (5×20=100 ticks):
-```
-/scoreboard players set Cooldown ltp.options 100
-```
-
-
-Here's a list with all the options available:
 
 | Option | Value | Default | Description |
 | -- | -- | -- | -- |
-| Enabled | 0/1 | 1 | Enable or disable teleporting |
+| Toggle | 0/1 | 1 | Enable or disable teleporting |
 | OnLodestone | 0/1 | 1 | Toggle if players must stand on a lodestone block to teleport |
 | Cooldown | ≥ 0 | 1200 | Teleport cooldown, in ticks (20 ticks = 1 second) |
 | SneakTime | ≥ 0 | 100 | Sneak time to teleport, in ticks |
@@ -84,7 +75,7 @@ Default values were chosen with game balance in mind, but they're up to personal
 <br/>
 
 ## Other information
-- Made for Minecraft Java Edition 1.20.4+
+- Made for Minecraft Java Edition 1.20.6
 - For previous versions, check the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
 - Everything in this data pack uses the `ltp` prefix
 
