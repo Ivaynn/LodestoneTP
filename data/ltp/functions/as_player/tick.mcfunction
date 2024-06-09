@@ -18,5 +18,5 @@ execute unless predicate ltp:is_sneaking run return run scoreboard players set @
 
 
 # Main
-execute if predicate ltp:holding_compass if items entity @s weapon.mainhand minecraft:compass[minecraft:lodestone_tracker] run return run function ltp:as_player/tick_sneaking
-execute if score RecoveryCompass ltp.options matches 1 if predicate ltp:holding_recovery run return run function ltp:as_player/tick_sneaking
+execute if predicate ltp:holding_compass if items entity @s weapon.mainhand minecraft:compass[minecraft:lodestone_tracker] at @s run return run function ltp:as_player/tick_sneaking
+execute if score RecoveryCompass ltp.options matches 1 if predicate ltp:holding_recovery at @s run return run function ltp:as_player/tick_sneaking
