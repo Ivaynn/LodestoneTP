@@ -1,7 +1,7 @@
 
 # Get compass type
 scoreboard players set $compass_type ltp.tmp 0
-execute if predicate ltp:holding_tracked run scoreboard players set $compass_type ltp.tmp 1
+execute if predicate ltp:holding_compass run scoreboard players set $compass_type ltp.tmp 1
 execute if predicate ltp:holding_recovery run scoreboard players set $compass_type ltp.tmp 2
 
 

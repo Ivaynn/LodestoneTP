@@ -11,10 +11,12 @@ scoreboard players set @s LodestoneTP 0
 execute if score Cooldown ltp.options matches 1.. run function ltp:as_player/cooldown
 
 
+# Check teleporting conditions
+execute unless score Enabled ltp.options matches 1 run return run scoreboard players set @s ltp.timer 0
+execute as @s[gamemode=spectator] run return run scoreboard players set @s ltp.timer 0 
+execute unless predicate ltp:is_sneaking run return run scoreboard players set @s ltp.timer 0 
+
+
 # Main
-scoreboard players set $sneaking ltp.tmp 0
-execute if score Enabled ltp.options matches 1 if predicate ltp:is_sneaking if predicate ltp:holding_tracked as @s[gamemode=!spectator] run scoreboard players set $sneaking ltp.tmp 1
-execute if score Enabled ltp.options matches 1 if score RecoveryCompass ltp.options matches 1 if predicate ltp:is_sneaking if predicate ltp:holding_recovery as @s[gamemode=!spectator] run scoreboard players set $sneaking ltp.tmp 1
-execute if score $sneaking ltp.tmp matches 1 at @s run function ltp:as_player/tick_sneaking
-execute if score $sneaking ltp.tmp matches 0 run scoreboard players set @s ltp.timer 0
-scoreboard players reset $sneaking ltp.tmp
+execute if predicate ltp:holding_compass if items entity @s weapon.mainhand minecraft:compass[minecraft:lodestone_tracker] run return run function ltp:as_player/tick_sneaking
+execute if score RecoveryCompass ltp.options matches 1 if predicate ltp:holding_recovery run return run function ltp:as_player/tick_sneaking
