@@ -75,7 +75,7 @@ Default values were chosen with game balance in mind, but they're up to personal
 <br/>
 
 ## Other information
-- Made for Minecraft Java Edition 1.20.6
+- Made for Minecraft Java Edition 1.21
 - For previous versions, check the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
 - Everything in this data pack uses the `ltp` prefix
 
