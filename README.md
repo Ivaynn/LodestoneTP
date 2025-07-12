@@ -1,19 +1,23 @@
 # LodestoneTP
 
-LodestoneTP is a Minecraft data pack that introduces a convenient and "vanilla-friendly" teleportation using compasses and tracked lodestone blocks. It includes many options to personalize your experience and help you balance this feature to your liking.
+LodestoneTP is a Minecraft data pack that introduces a convenient and vanilla-friendly teleportation using compasses and tracked lodestone blocks. It includes many options to personalize your experience and help you balance this feature to your liking.
 
 <p align="center">
   <img src="https://github.com/Ivaynn/LodestoneTP/assets/130713483/eafe6c4f-4107-43ec-b7a1-071489595b50" width="60%" title="LodestoneTP">
 </p>
 
+<h3 align="center">
+  <a href="https://discord.gg/QAtc7ZgPxS">Discord</a> | 
+  <a href="https://www.planetminecraft.com/data-pack/lodestonetp/">PlanetMinecraft</a> |
+  <a href="https://modrinth.com/project/lodestonetp">Modrinth</a>
+</h3>
 
-### Links: [Discord](https://discord.gg/QAtc7ZgPxS) | [PlanetMinecraft](https://www.planetminecraft.com/data-pack/lodestonetp/)
 
 <br/>
 
 ## Installation
 
-1. Download the data pack from the [releases page](https://github.com/Ivaynn/LodestoneTP/releases) or Planet Minecraft
+1. Download the data pack from the [releases page](https://github.com/Ivaynn/LodestoneTP/releases) or one of the links above
 2. Find the "datapacks" folder of your world:
     - Singleplayer (new world): Create New World > More > Data Packs > Open Pack Folder
     - Singleplayer (existing world): Select World > Edit > Open World Folder > "datapacks"
@@ -75,8 +79,8 @@ Default values were chosen with game balance in mind, but they're up to personal
 <br/>
 
 ## Other information
-- Made for Minecraft Java Edition 1.21
-- For previous versions, check the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
+- Made for Minecraft Java Edition 1.20+
+- Download previous version on the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
 - Everything in this data pack uses the `lodestonetp` prefix
 
 
