@@ -24,7 +24,7 @@ LodestoneTP is a Minecraft data pack that introduces a convenient and "vanilla-f
 6. Enter the world or use `/reload`
 7. If installed correctly, you will be able to use `/trigger LodestoneTP`
 
-To uninstall, use `/function ltp:admin/uninstall` and remove the data pack from the world files.
+To uninstall, use `/function lodestonetp:admin/uninstall` and remove the data pack from the world files.
 
 
 
@@ -46,7 +46,7 @@ To see the coordinates of your tracked compass and other information related to 
 
 This data pack includes a few options that you can change to your liking. To view and change these options in-game, you can use this command:
 ```
-/function ltp:admin/options
+/function lodestonetp:admin/options
 ```
 Click the options to change them. To set a custom value, type it at the end of its scoreboard command.
 
@@ -77,7 +77,7 @@ Default values were chosen with game balance in mind, but they're up to personal
 ## Other information
 - Made for Minecraft Java Edition 1.21
 - For previous versions, check the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
-- Everything in this data pack uses the `ltp` prefix
+- Everything in this data pack uses the `lodestonetp` prefix
 
 
 
