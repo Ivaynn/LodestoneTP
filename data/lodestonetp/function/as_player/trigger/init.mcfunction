@@ -1,5 +1,5 @@
 
-tellraw @s [{text: "", hover_event: {action: "show_text", value: [{text: "Data pack made by Ivaynn", color: "gray"}]}},"\n",{text: " ◆ ", color: "aqua", bold: true},{text: " LodestoneTP ", color: "dark_aqua"},{text: " ◆ ", color: "aqua", bold: true},"\n"]
+tellraw @s [{text: "", hover_event: {action: "show_text", value: [{text: "Click to open the project page", color: "gray"}]},click_event:{action:"open_url",url:"https://github.com/Ivaynn/LodestoneTP"}},"\n",{text: " ◆ ", color: "aqua", bold: true},{text: " LodestoneTP ", color: "dark_aqua"},{text: " ◆ ", color: "aqua", bold: true},"\n"]
 
 scoreboard players set $holding_tracked lodestonetp.tmp 0
 execute if predicate lodestonetp:holding_compass if items entity @s weapon.mainhand minecraft:compass[minecraft:lodestone_tracker] run scoreboard players set $holding_tracked lodestonetp.tmp 1
