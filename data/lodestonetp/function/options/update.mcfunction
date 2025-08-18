@@ -12,3 +12,4 @@ execute unless score SneakTime lodestonetp.options matches 0.. run scoreboard pl
 execute unless score BreakCompass lodestonetp.options matches 0..1 run scoreboard players set BreakCompass lodestonetp.options 0
 execute unless score TriggerInfo lodestonetp.options matches 0..1 run scoreboard players set TriggerInfo lodestonetp.options 1
 execute unless score RecoveryCompass lodestonetp.options matches 0..1 run scoreboard players set RecoveryCompass lodestonetp.options 0
+execute unless score ItemCost lodestonetp.options matches 0.. run scoreboard players set ItemCost lodestonetp.options 0
