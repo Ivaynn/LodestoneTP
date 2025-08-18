@@ -70,6 +70,7 @@ Click the options to change them. To set a custom value, type it at the end of i
 | BreakCompass | 0/1 | 0 | Toggle if a compass breaks when used to teleport |
 | TriggerInfo | 0/1 | 1 | Toggle compass information display from `/trigger LodestoneTP` |
 | RecoveryCompass | 0/1 | 0 | Toggle if a recovery compass can be used to teleport to the death location |
+| ItemCost | item | unset | Items that get consumed on teleport (supports custom items) |
 
 Default values were chosen with game balance in mind, but they're up to personal preference, so don't be afraid to change them to your liking!
 
