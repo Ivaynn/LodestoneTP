@@ -1,0 +1,1 @@
+$data modify storage lodestonetp:tmp tmp.item_cost set value [{text:"",hover_event:{action:"show_item",id:"$(id)",count:1}},{score: {name: "ItemCost", objective:"lodestonetp.options"}}," ",{text:"$(id)"}]

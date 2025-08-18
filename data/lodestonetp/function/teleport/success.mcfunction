@@ -19,3 +19,4 @@ execute if score GiveResistance lodestonetp.options matches 1 run effect give @s
 execute if score ProgressBar lodestonetp.options matches 1 if score SneakTime lodestonetp.options matches 20.. run function lodestonetp:teleport/progress_full
 execute if score BreakBlocks lodestonetp.options matches 1 at @s unless block ~ ~ ~ #lodestonetp:keep run setblock ~ ~ ~ minecraft:air destroy
 execute if score BreakCompass lodestonetp.options matches 1 run function lodestonetp:teleport/break_compass
+execute if score ItemCost lodestonetp.options matches 1.. run item modify entity @s weapon.offhand lodestonetp:remove_item_cost

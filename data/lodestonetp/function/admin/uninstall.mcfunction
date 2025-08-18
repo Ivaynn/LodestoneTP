@@ -14,3 +14,4 @@ scoreboard objectives remove lodestonetp.math
 scoreboard objectives remove lodestonetp.options
 
 data remove storage lodestonetp:tmp tmp
+data remove storage lodestonetp:item_cost item

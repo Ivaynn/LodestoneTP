@@ -15,5 +15,6 @@ execute if score $cancel lodestonetp.tmp matches 6 run tellraw @s ["",{text: "Lo
 execute if score $cancel lodestonetp.tmp matches 7 run tellraw @s ["",{text: "LodestoneTP > ", color: "dark_aqua"},{text: "Teleporting to other dimensions is disabled!", color: "gray"}]
 execute if score $cancel lodestonetp.tmp matches 8 run tellraw @s ["",{text: "LodestoneTP > ", color: "dark_aqua"},{text: "Unknown dimension!", color: "gray"}]
 execute if score $cancel lodestonetp.tmp matches 9 run tellraw @s ["",{text: "LodestoneTP > ", color: "dark_aqua"},{text: "Invalid last death location!", color: "gray"}]
-
+execute if score $cancel lodestonetp.tmp matches 10 run function lodestonetp:as_player/item_cost_display/init
+execute if score $cancel lodestonetp.tmp matches 10 run tellraw @s ["",{text: "LodestoneTP > ", color: "dark_aqua"},{text: "You must have ", color: "gray"},{storage:"lodestonetp:tmp",nbt:"tmp.item_cost",interpret:true,color:"white"},{text: " in your offhand to pay for the teleport!", color: "gray"}]
 scoreboard players reset $cancel lodestonetp.tmp

@@ -20,6 +20,10 @@ execute if score $compass_type lodestonetp.tmp matches 2 if score RecoveryCompas
 execute if score Cooldown lodestonetp.options matches 1.. if score $cancel lodestonetp.tmp matches 0 if score @s lodestonetp.cooldown matches 1.. run scoreboard players set $cancel lodestonetp.tmp 3
 
 
+# Check if offhand item is valid
+execute if score ItemCost lodestonetp.options matches 1.. if score $cancel lodestonetp.tmp matches 0 run function lodestonetp:teleport/item_cost
+
+
 # Check dimension
 execute if score $compass_type lodestonetp.tmp matches 1 run data modify storage lodestonetp:tmp tmp.dimension set from storage lodestonetp:tmp tmp.data.target.dimension
 execute if score $compass_type lodestonetp.tmp matches 2 run data modify storage lodestonetp:tmp tmp.dimension set from entity @s LastDeathLocation.dimension
