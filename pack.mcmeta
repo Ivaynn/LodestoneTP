@@ -1,6 +1,10 @@
 {
     "pack": {
+        "description": "Ivaynn's LodestoneTP v1.5.1",
+        "min_format": 80,
+        "max_format": 88,
+
         "pack_format": 81,
-        "description": "Ivaynn's LodestoneTP v1.5.0"
+        "supported_formats": [80,81]
     }
 }
