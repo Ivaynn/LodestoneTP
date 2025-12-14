@@ -81,7 +81,6 @@ Default values were chosen with game balance in mind, but they're up to personal
 
 ## Other information
 - Made for Minecraft Java Edition 1.20+
-- Download previous version on the [releases page](https://github.com/Ivaynn/LodestoneTP/releases)
 - Everything in this data pack uses the `lodestonetp` prefix
 
 
