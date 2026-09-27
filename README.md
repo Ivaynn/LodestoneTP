@@ -80,7 +80,7 @@ Default values were chosen with game balance in mind, but they're up to personal
 <br/>
 
 ## Other information
-- Made for Minecraft Java Edition 1.20+
+- Made for Minecraft Java Edition 1.21.9+
 - Everything in this data pack uses the `lodestonetp` prefix
 
 
